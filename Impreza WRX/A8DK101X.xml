@@ -15,4 +15,13 @@
     <checksummodule>subarudbw</checksummodule>
   </romid>
   <include>A8DK100X</include>
+
+  <!-- AF 3 Correction Limits -->
+    
+     <table name="AF 3 CL Target Compensation Limits" address="2eb7c">
+     </table>
+
+     <table name="AF 3 Correction Limits" address="30b04">
+     </table>
+
 </rom>

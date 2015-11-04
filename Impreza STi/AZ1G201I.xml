@@ -16,6 +16,19 @@
   </romid>
   <include>32BITBASE</include>
   
+   <table name="Hotstart Enrichment Decay Delay" address="C87F8"/>
+   <table name="Hotstart Enrichment Decay Step" address="C8DC4"/>
+   <table name="Initial Hotstart Enrichment (High)" address="C8DB8"/>
+   <table name="Hotstart High Enrichment Activation Threshold (Coolant Temperature)" address="C8DA8"/>
+   <table name="Hotstart High Enrichment Activation Threshold (Intake Air Temperature)" address="C8DAC"/>
+   <table name="Initial Hotstart Enrichment (Low)" address="C8DBC"/>
+   <table name="Hotstart Low Enrichment Activation Threshold (Coolant Temperature)" address="C8DB0"/>
+   <table name="Hotstart Low Enrichment Activation Threshold (Minimum Intake Air Temperature)" address="C8DB4"/>
+   <table name="Maximum Non-Idle Hotstart Enrichment (Post Delay)" address="C8DC8"/>
+   <table name="Hotstart Maximum Non-Idle Enrichment Delay" address="C87FC"/>
+   <table name="Hotstart Minimum Enrichment Limit Runtime" address="C87FA"/>
+   <table name="Hotstart Minimum Enrichment (During Delay and Runtime)" address="C8DC0"/>
+
     <table name="Front AF Sensor Smoothing Table" address="d5d80">
     <table name="Smoothed MAF" address="d5d60"/>
     <table name="Engine Load" address="d5d70"/>

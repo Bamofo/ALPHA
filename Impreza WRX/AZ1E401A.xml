@@ -28,14 +28,33 @@
 		<table name="Y" address="DD540"/>
 	</table>
   
-  	<!-- Alpha Fuel pump duty tables -->
+  <table name="Ignition Dwell" address="D45C4">
+    <table name="Engine Speed" address="D4570"/>
+    <table name="Battery Volts" address="D45B0"/>
+  </table>
+  	
+<table name="Idle Speed Stability A" address="D3334">
+    <table name="Idle Speed Error" address="D32CC" elements="17"/>
+    <table name="Engine Speed Delta" address="D3310" elements="9"/>
+  </table>
+
+  <table name="Idle Speed Stability B" address="D34D0">
+    <table name="Idle Speed Error" address="D3468" elements="17"/>
+    <table name="Engine Speed Delta" address="D34AC" elements="9"/>
+  </table>
+    <!-- Alpha Fuel pump duty tables -->
 	
 	<table name="Fuel Pump Duty" address="44664"/>
 	
-    <table name="AF 3 CL Target Compensation Limits" address="2ef3c">
+  <table name="AF 3 CL Target Compensation Limits" address="2ef3c">
   </table>
 
   <table name="AF 3 Correction Limits" address="30ad0">
+  </table>
+
+  <table name="Front AF Sensor Smoothing Table" address="D4684">
+    <table name="Smoothed MAF" address="D4664"/>
+    <table name="Engine Load" address="D4674"/>
   </table>
 
   <table name="Hotstart Enrichment Decay Delay" address="c81be"/>
