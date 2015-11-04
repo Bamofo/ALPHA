@@ -27,7 +27,7 @@
   <table name="Hotstart High Enrichment Activation Threshold (Coolant Temperature)" address="C5ECC" />
   <table name="Hotstart High Enrichment Activation Threshold (Intake Air Temperature)" address="C5ED4" />
   <table name="Initial Hotstart Enrichment (Low)" address="C5EE0" />
-  <table name="Hotstart Low Enrichment Activation Threshold (Coolant Temperature)" address="272C" />
+  <table name="Hotstart Low Enrichment Activation Threshold (Coolant Temperature)" address="c5ed0" />
   <table name="Hotstart Low Enrichment Activation Threshold (Minimum Intake Air Temperature)" address="C5ED8" />
   <table name="Maximum Non-Idle Hotstart Enrichment (Post Delay)" address="C5EE8" />
   <table name="Hotstart Maximum Non-Idle Enrichment Delay" address="C5AF6" />
