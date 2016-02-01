@@ -1,0 +1,10 @@
+<rom>
+	<romid>
+		<xmlid>read_ACD</xmlid>
+		<make>Mitsubishi</make>
+		<market>ALL</market>
+		<submodel>ACD ECU MH7203FA</submodel>
+		<flashmethod>mitsukernel</flashmethod>			
+		<memmodel>H8539FA</memmodel>
+	</romid>
+</rom>	

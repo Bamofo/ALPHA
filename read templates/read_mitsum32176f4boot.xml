@@ -1,0 +1,13 @@
+<rom>
+	<romid>
+		<xmlid>read_mitsum32176f4boot</xmlid>
+		<make>Mitsubishi</make>
+		<market>ALL</market>
+		<model>Lancer</model>
+		<submodel>RalliArt (512k) MH8302F</submodel>
+		<year>2004-2005</year>
+		<flashmethod>mitsubootloader</flashmethod>			
+		<memmodel>M32176F4</memmodel>
+		<checksummodule>mitsucan</checksummodule>
+	</romid>
+</rom>	

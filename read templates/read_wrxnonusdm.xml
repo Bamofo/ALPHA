@@ -1,0 +1,12 @@
+<rom>
+	<romid>
+		<xmlid>read_wrxnonusdm</xmlid>
+		<make>Subaru</make>
+		<market>non-USDM</market>
+		<model>Impreza</model>
+		<submodel>WRX/STI</submodel>
+		<year>2001-2005</year>
+		<flashmethod>wrx02</flashmethod>			
+		<memmodel>68HC16Y5</memmodel>
+	</romid>
+</rom>	
