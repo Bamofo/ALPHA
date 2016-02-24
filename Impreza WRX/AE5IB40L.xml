@@ -17,6 +17,11 @@
 
 	<include>32BITBASE</include>
 
+	<table name="AF 3 Correction Limits" address="34320">
+	</table>
+	<table name="AF 3 CL Target Compensation Limits" address="32748">
+	</table>
+
 	<table name="Target Boost_" address="c132c">
 		<table name="Requested Torque" address="c12c4"/>
 		<table name="Engine Speed" address="c12f0"/>
