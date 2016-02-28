@@ -17,14 +17,6 @@
 
 	<include>32BITBASE</include>
 
-	<table name="(P014C) O2 SENSOR SLOW RESPONSE RICH TO LEAN B1 S1" address="a51b2"/>
-
-	<table name="(P014D) O2 SENSOR SLOW RESPONSE LEAN TO RICH B1 S1" address="a51b1"/>
-
-	<table name="(P015A) O2 SENSOR DELAYED RESPONSE RICH TO LEAN B1 S1" address="a51ae"/>
-
-	<table name="(P015B) O2 SENSOR DELAYED RESPONSE LEAN TO RICH B1 S1" address="a51ad"/>
-
 	<table name="Manifold Pressure Sensor Scaling_" address="dc6c8">
 	</table>
 
@@ -450,7 +442,7 @@
 		<table name="Engine Speed" elements="10"/>
 	</table>
 
-	<table name="Intake Cam Advance Angle Cruise (AVCS)__" address="de7fc">
+	<table name="Intake Cam Advance Angle Cruise (AVCS)__" address="de7fc" scaling="Advance(degrees)2">
 		<table name="Engine Load" address="de7a8"/>
 		<table name="Engine Speed" address="de7d4"/>
 	</table>
@@ -546,9 +538,39 @@
 		<table name="Coolant Temperature" address="d92cc"/>
 	</table>
 
-	<table name="(P0000) PASS CODE (NO DTC DETECTED)" address="a5140"/>
-
 	<table name="(P0000) PASS CODE (NO DTC DETECTED)_" address="a5141"/>
+
+	<table name="(P013A) O2 SENSOR SLOW RESPONSE RICH TO LEAN B1 S2" address="a51c3"/>
+
+	<table name="(P013B) O2 SENSOR SLOW RESPONSE LEAN TO RICH B1 S2" address="a51c2"/>
+
+	<table name="(P013E) O2 SENSOR DELAYED RESPONSE RICH TO LEAN B1 S2" address="a51bf"/>
+
+	<table name="(P013F) O2 SENSOR DELAYED RESPONSE LEAN TO RICH B1 S2" address="a51be"/>
+
+	<table name="(P015B) O2 SENSOR DELAYED RESPONSE LEAN TO RICH B1 S1" address="a51ad"/>
+
+	<table name="(P0201) INJECTOR CIRCUIT MALFUNCTION CYLINDER 1" address="a5197"/>
+
+	<table name="(P0202) INJECTOR CIRCUIT MALFUNCTION CYLINDER 2" address="a519a"/>
+
+	<table name="(P0203) INJECTOR CIRCUIT MALFUNCTION CYLINDER 3" address="a5199"/>
+
+	<table name="(P0204) INJECTOR CIRCUIT MALFUNCTION CYLINDER 4" address="a5198"/>
+
+	<table name="(P0351) IGNITION COIL A PRIMARY/SECONDARY CIRCUIT MALFUNCTION" address="a51cb"/>
+
+	<table name="(P0352) IGNITION COIL B PRIMARY/SECONDARY CIRCUIT MALFUNCTION" address="a51ca"/>
+
+	<table name="(P0353) IGNITION COIL C PRIMARY/SECONDARY CIRCUIT MALFUNCTION" address="a51c9"/>
+
+	<table name="(P0354) IGNITION COIL D PRIMARY/SECONDARY CIRCUIT MALFUNCTION" address="a51c8"/>
+
+	<table name="(P2404) EVAP LEAK DETECTION PUMP SENSE CIRCUIT RANGE/PERF" address="a51ba"/>
+
+	<table name="(P2610) ECM/PCM INTERNAL ENGINE OFF TIMER PERFORMANCE" address="a51a5"/>
+
+	<table name="(P0000) PASS CODE (NO DTC DETECTED)" address="a5140"/>
 
 	<table name="(P0011) CAMSHAFT POS. - TIMING OVER-ADVANCED 1" address="a512c"/>
 
@@ -616,17 +638,15 @@
 
 	<table name="(P0138) REAR O2 SENSOR HIGH VOLTAGE" address="a5145"/>
 
-	<table name="(P013A) O2 SENSOR SLOW RESPONSE RICH TO LEAN B1 S2" address="a51c3"/>
-
-	<table name="(P013B) O2 SENSOR SLOW RESPONSE LEAN TO RICH B1 S2" address="a51c2"/>
-
-	<table name="(P013E) O2 SENSOR DELAYED RESPONSE RICH TO LEAN B1 S2" address="a51bf"/>
-
-	<table name="(P013F) O2 SENSOR DELAYED RESPONSE LEAN TO RICH B1 S2" address="a51be"/>
-
 	<table name="(P0140) REAR O2 SENSOR NO ACTIVITY" address="a5189"/>
 
 	<table name="(P0141) REAR O2 SENSOR MALFUNCTION" address="a5130"/>
+
+	<table name="(P014C) O2 SENSOR SLOW RESPONSE RICH TO LEAN B1 S1" address="a51b2"/>
+
+	<table name="(P014D) O2 SENSOR SLOW RESPONSE LEAN TO RICH B1 S1" address="a51b1"/>
+
+	<table name="(P015A) O2 SENSOR DELAYED RESPONSE RICH TO LEAN B1 S1" address="a51ae"/>
 
 	<table name="(P0171) SYSTEM TOO LEAN" address="a5138"/>
 
@@ -637,14 +657,6 @@
 	<table name="(P0197) OIL TEMP SENSOR LOW" address="a5174"/>
 
 	<table name="(P0198) OIL TEMP SENSOR HIGH" address="a5179"/>
-
-	<table name="(P0201) INJECTOR CIRCUIT MALFUNCTION CYLINDER 1" address="a5197"/>
-
-	<table name="(P0202) INJECTOR CIRCUIT MALFUNCTION CYLINDER 2" address="a519a"/>
-
-	<table name="(P0203) INJECTOR CIRCUIT MALFUNCTION CYLINDER 3" address="a5199"/>
-
-	<table name="(P0204) INJECTOR CIRCUIT MALFUNCTION CYLINDER 4" address="a5198"/>
 
 	<table name="(P0222) TPS B LOW INPUT" address="a5158"/>
 
@@ -671,14 +683,6 @@
 	<table name="(P0341) CAMSHAFT POS. SENSOR A RANGE/PERF" address="a51e4"/>
 
 	<table name="(P0345) CAMSHAFT POS. SENSOR A BANK 2" address="a5169"/>
-
-	<table name="(P0351) IGNITION COIL A PRIMARY/SECONDARY CIRCUIT MALFUNCTION" address="a51cb"/>
-
-	<table name="(P0352) IGNITION COIL B PRIMARY/SECONDARY CIRCUIT MALFUNCTION" address="a51ca"/>
-
-	<table name="(P0353) IGNITION COIL C PRIMARY/SECONDARY CIRCUIT MALFUNCTION" address="a51c9"/>
-
-	<table name="(P0354) IGNITION COIL D PRIMARY/SECONDARY CIRCUIT MALFUNCTION" address="a51c8"/>
 
 	<table name="(P0365) CAMSHAFT POS. SENSOR B BANK 1" address="a5168"/>
 
@@ -816,13 +820,9 @@
 
 	<table name="(P2402) EVAP LEAK DETECTION PUMP CONTROL CIRCUIT HIGH" address="a51bb"/>
 
-	<table name="(P2404) EVAP LEAK DETECTION PUMP SENSE CIRCUIT RANGE/PERF" address="a51ba"/>
-
 	<table name="(P2419) EVAP SWITCHING VALVE LOW" address="a51a7"/>
 
 	<table name="(P2420) EVAP SWITCHING VALVE HIGH" address="a51a6"/>
-
-	<table name="(P2610) ECM/PCM INTERNAL ENGINE OFF TIMER PERFORMANCE" address="a51a5"/>
 
 	<table name="(U0073) CAN COMMUNICATION BUS A OFF" address="a51a1"/>
 
