@@ -39,6 +39,16 @@ for any damage or injury incurred as a result of these definitions. USE AT YOUR 
     <flashmethod>subarucan</flashmethod>
   </romid>
   <include>32BITBASE</include>
+
+  <table name="Cam Advance Angle A Non-Turbo" address="cf160">
+    <table name="Engine Load" address="cf0f0" elements="10"/>
+    <table name="Engine Speed" address="cf118" elements="18"/>
+  </table>
+
+  <table name="Cam Advance Angle B Non-Turbo" address="cf338">
+    <table name="Engine Load" address="cf2c8" elements="10"/>
+    <table name="Engine Speed" address="cf2f0" elements="18"/>
+  </table>
   <table name="Manifold Pressure Sensor Scaling" address="d5b64" />
   <table name="Manifold Pressure Sensor Limits (CEL)" address="d5b24" />
   <table name="Manifold Pressure Sensor CEL Delays" address="d5ae9" />
