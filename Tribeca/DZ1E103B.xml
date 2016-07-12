@@ -36,14 +36,14 @@
 		<table name="Engine Speed" address="cd8ec" elements="21"/>
 	</table>
 
-	<table name="Cam Advance Angle A Non-Turbo" address="cac9c">
-		<table name="Engine Load" address="cac20" elements="15"/>
-		<table name="Engine Speed" address="cac5c" elements="16"/>
+	<table name="Cam Advance Angle A Non-Turbo">
+		<table name="Engine Load" elements="15"/>
+		<table name="Engine Speed" elements="16"/>
 	</table>
 
-	<table name="Cam Advance Angle B Non-Turbo" address="caef8">
-		<table name="Engine Load" address="cae7c" elements="15"/>
-		<table name="Engine Speed" address="caeb8" elements="16"/>
+	<table name="Cam Advance Angle B Non-Turbo">
+		<table name="Engine Load" elements="15"/>
+		<table name="Engine Speed" elements="16"/>
 	</table>
 
 	<table name="Intake Cam Advance Angle A (AVCS)" address="d2e00">
@@ -59,6 +59,16 @@
 	<table name="Intake Cam Advance Angle Cruise (AVCS)" address="d3e40" scaling="Advance(degrees)3">
 		<table name="Engine Load" address="d3dc4" elements="15"/>
 		<table name="Engine Speed" address="d3e00" elements="16"/>
+	</table>
+
+	<table name="Exhaust Cam Retard Angle A (AVCS)" address="cac9c" scaling="Advance(degrees)7">
+		<table name="Engine Load" address="cac20" elements="15"/>
+		<table name="Engine Speed" address="cac5c" elements="16"/>
+	</table>
+
+	<table name="Exhaust Cam Retard Angle B (AVCS)" address="caef8" scaling="Advance(degrees)7">
+		<table name="Engine Load" address="cae7c" elements="15"/>
+		<table name="Engine Speed" address="caeb8" elements="16"/>
 	</table>
 
 	<table name="Radiator Fan Modes A (ECT)" address="d15e8">
