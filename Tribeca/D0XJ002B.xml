@@ -446,6 +446,9 @@
 	<table name="Radiator Fan Modes C (ECT)" address="cbee8">
 	</table>
 
+	<table name="Radiator Fan Modes D (ECT)" address="cbeb8">
+	</table>
+
 	<table name="Radiator Fan Modes (Veh. Speed)" address="cbe70">
 	</table>
 

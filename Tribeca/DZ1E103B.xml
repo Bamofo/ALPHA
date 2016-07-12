@@ -16,4 +16,52 @@
 
 	<include>DZ1E401B</include>
 
+	<table name="Base Timing E" address="cd044">
+		<table name="Engine Load" address="ccfb4"/>
+		<table name="Engine Speed" address="ccff0" elements="21"/>
+	</table>
+
+	<table name="Base Timing F" address="cd210">
+		<table name="Engine Load" address="cd180"/>
+		<table name="Engine Speed" address="cd1bc" elements="21"/>
+	</table>
+
+	<table name="Base Timing G" address="cd774">
+		<table name="Engine Load" address="cd6e4"/>
+		<table name="Engine Speed" address="cd720" elements="21"/>
+	</table>
+
+	<table name="Base Timing H" address="cd940">
+		<table name="Engine Load" address="cd8b0"/>
+		<table name="Engine Speed" address="cd8ec" elements="21"/>
+	</table>
+
+	<table name="Cam Advance Angle A Non-Turbo" address="cac9c">
+		<table name="Engine Load" address="cac20" elements="15"/>
+		<table name="Engine Speed" address="cac5c" elements="16"/>
+	</table>
+
+	<table name="Cam Advance Angle B Non-Turbo" address="caef8">
+		<table name="Engine Load" address="cae7c" elements="15"/>
+		<table name="Engine Speed" address="caeb8" elements="16"/>
+	</table>
+
+	<table name="Intake Cam Advance Angle A (AVCS)" address="d2e00">
+		<table name="Engine Load" address="d2d84" elements="15"/>
+		<table name="Engine Speed" address="d2dc0" elements="16"/>
+	</table>
+
+	<table name="Intake Cam Advance Angle B (AVCS)" address="d305c">
+		<table name="Engine Load" address="d2fe0" elements="15"/>
+		<table name="Engine Speed" address="d301c" elements="16"/>
+	</table>
+
+	<table name="Intake Cam Advance Angle Cruise (AVCS)" address="d3e40" scaling="Advance(degrees)3">
+		<table name="Engine Load" address="d3dc4" elements="15"/>
+		<table name="Engine Speed" address="d3e00" elements="16"/>
+	</table>
+
+	<table name="Radiator Fan Modes A (ECT)" address="d15e8">
+	</table>
+
 </rom>
