@@ -71,7 +71,24 @@
 		<table name="Engine Speed" address="caeb8" elements="16"/>
 	</table>
 
-	<table name="Radiator Fan Modes A (ECT)" address="d15e8">
+	<table name="Exhaust Cam Retard Angle Cruise (AVCS)" address="d3e40" scaling="Advance(degrees)3">
+		<table name="Engine Load" address="d3dc4" elements="15"/>
+		<table name="Engine Speed" address="d3e00" elements="16"/>
+	</table>
+
+	<table name="Radiator Fan Modes A (ECT)" address="d1534">
+	</table>
+
+	<table name="Radiator Fan Modes B (ECT)" address="d1544">
+	</table>
+
+	<table name="Radiator Fan Modes C (ECT)" address="d1554">
+	</table>
+
+	<table name="Radiator Fan Modes D (ECT)" address="d1564">
+	</table>
+
+	<table name="Radiator Fan Modes (Veh. Speed)" address="d1578">
 	</table>
 
 </rom>
