@@ -535,10 +535,6 @@
 	<table name="Advance Multiplier Step Value" address="cfeb8">
 	</table>
 
-	<table name="Intake Cam Advance Angle (AVCS)" scaling="Retard(degrees)3">
-		<table name="Engine Load" elements="15"/>
-	</table>
-
 	<table name="Intake Cam Advance Angle A (AVCS)" address="d8ef4" scaling="Advance(degrees)1">
 		<table name="Engine Load" address="d8e70" elements="15"/>
 		<table name="Engine Speed" address="d8eac"/>

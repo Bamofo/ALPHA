@@ -477,14 +477,14 @@
 		<table name="Engine Speed" address="d301c" elements="16"/>
 	</table>
 
-	<table name="Exhaust Cam Retard Angle A (AVCS)" address="cac9c" scaling="Advance(degrees)7">
-		<table name="Engine Load" address="cac20" elements="15"/>
-		<table name="Engine Speed" address="cac5c" elements="16"/>
+	<table name="Exhaust Cam Retard Angle A (AVCS)" scaling="Advance(degrees)7">
+		<table name="Engine Load" elements="15"/>
+		<table name="Engine Speed" elements="16"/>
 	</table>
 
-	<table name="Exhaust Cam Retard Angle B (AVCS)" address="caef8" scaling="Advance(degrees)7">
-		<table name="Engine Load" address="cae7c" elements="15"/>
-		<table name="Engine Speed" address="caeb8" elements="16"/>
+	<table name="Exhaust Cam Retard Angle B (AVCS)" scaling="Advance(degrees)7">
+		<table name="Engine Load" elements="15"/>
+		<table name="Engine Speed" elements="16"/>
 	</table>
 
 	<table name="Requested Torque A (Accelerator Pedal)" address="dddac">
