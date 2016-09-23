@@ -552,6 +552,31 @@
 	<table name="Timing Comp Minimum Coolant Temp (Per Cylinder)" address="cfc28">
 	</table>
 
+	<table name="Timing Compensation Per Gear (1st)" address="d1fac">
+		<table name="Engine Load" address="d1f8c" elements="5"/>
+		<table name="Engine Speed" address="d1fa0"/>
+	</table>
+
+	<table name="Timing Compensation Per Gear (2nd)" address="d1fdc">
+		<table name="Engine Load" address="d1fbc" elements="5"/>
+		<table name="Engine Speed" address="d1fd0"/>
+	</table>
+
+	<table name="Timing Compensation Per Gear (3rd)" address="d200c">
+		<table name="Engine Load" address="d1fec" elements="5"/>
+		<table name="Engine Speed" address="d2000"/>
+	</table>
+
+	<table name="Timing Compensation Per Gear (4th)" address="d203c">
+		<table name="Engine Load" address="d201c" elements="5"/>
+		<table name="Engine Speed" address="d2030"/>
+	</table>
+
+	<table name="Timing Compensation Per Gear (5th)" address="d206c">
+		<table name="Engine Load" address="d204c" elements="5"/>
+		<table name="Engine Speed" address="d2060"/>
+	</table>
+
 	<table name="Feedback Correction Range (RPM)" address="cfc34">
 	</table>
 
