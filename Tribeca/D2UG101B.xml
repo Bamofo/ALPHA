@@ -753,6 +753,11 @@
 
 	<table name="(P2229) BARO. PRESSURE CIRCUIT HIGH INPUT" address="98271"/>
 
+	<table name="Target Throttle Angle Idle Airflow Target Base Minimum" address="cc428">
+		<table name="Engine Speed" address="cc3a8"/>
+		<table name="Requested Torque" address="cc3e8"/>
+	</table>
+
 	<table name="Ignition Dwell" address="cd54c">
 		<table name="Engine Speed" address="cd4fc" elements="15"/>
 		<table name="Battery Volts" address="cd538"/>

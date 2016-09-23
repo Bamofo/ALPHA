@@ -36,6 +36,11 @@
 		<table name="Engine Speed" address="cd8ec" elements="21"/>
 	</table>
 
+	<table name="Knock Correction Advance Max B" address="ce370">
+		<table name="Engine Load" address="ce2e0" elements="15"/>
+		<table name="Engine Speed" address="ce31c" elements="21"/>
+	</table>
+
 	<table name="Intake Cam Advance Angle A (AVCS)" address="d2e00">
 		<table name="Engine Load" address="d2d84" elements="15"/>
 		<table name="Engine Speed" address="d2dc0" elements="16"/>
@@ -64,6 +69,16 @@
 	</table>
 
 	<table name="Radiator Fan Modes (Veh. Speed)" address="d1578">
+	</table>
+
+	<table name="Target Throttle Angle Idle Airflow Target Base Minimum" address="d02a0">
+		<table name="Engine Speed" address="d021c"/>
+		<table name="Requested Torque" address="d025c" elements="17"/>
+	</table>
+
+	<table name="Ignition Dwell" address="d13b8">
+		<table name="Engine Speed" address="d1368" elements="15"/>
+		<table name="Battery Volts" address="d13a4"/>
 	</table>
 
 </rom>

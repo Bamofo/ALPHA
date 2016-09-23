@@ -24,8 +24,6 @@
 
 	<table name="(P0000) PASS CODE (NO DTC DETECTED)" address="8d662"/>
 
-	<table name="(P0161) O2 SENSOR HEATER CIRCUIT MALFUNCTION B2 S2" address="8d6f2"/>
-
 	<table name="Manifold Pressure Sensor Scaling" address="d6b24">
 	</table>
 
@@ -614,16 +612,6 @@
 		<table name="Engine Speed" elements="21"/>
 	</table>
 
-	<table name="Requested Torque Limit A (Per Gear/Engine Speed)" address="dd518">
-		<table name="Engine Speed" address="dd4f8" elements="2"/>
-		<table name="Gear" address="dd500"/>
-	</table>
-
-	<table name="Requested Torque Limit B (Per Gear/Engine Speed)" address="dd550">
-		<table name="Engine Speed" address="dd530" elements="2"/>
-		<table name="Gear" address="dd538"/>
-	</table>
-
 	<table name="Rev Limit A" address="cb1b4">
 	</table>
 
@@ -644,9 +632,6 @@
 
 	<table name="Oil Temp Sensor Scaling" address="d6e8c">
 		<table name="Coolant Temp Sensor" address="d6d20"/>
-	</table>
-
-	<table name="Fuel Pump Duty" address="4a498">
 	</table>
 
 	<table name="Radiator Fan Modes A (ECT)" address="d7624">
@@ -694,12 +679,9 @@
 		<table name="Coolant Temperature" address="d34b4"/>
 	</table>
 
-	<table name="Ignition Dwell" address="d746c">
-		<table name="Engine Speed" address="d7418"/>
-		<table name="Battery" address="d7458"/>
-	</table>
-
 	<table name="Checksum Fix" address="ffb80"/>
+
+	<table name="(P0161) O2 SENSOR HEATER CIRCUIT MALFUNCTION B2 S2" address="8d6f2"/>
 
 	<table name="(P0000) PASS CODE (NO DTC DETECTED)" address="8d663"/>
 
@@ -1016,5 +998,28 @@
 	<table name="(U0416) CAN INVALID DATA RECEIVED FROM VDC" address="8d6ef"/>
 
 	<table name="(U0422) CAN INVALID DATA RECEIVED FROM BIU" address="8d6eb"/>
+
+	<table name="Target Throttle Angle Idle Airflow Target Base Minimum" address="d4ba0">
+		<table name="Engine Speed" address="d4b1c"/>
+		<table name="Requested Torque" address="d4b5c" elements="17"/>
+	</table>
+
+	<table name="Ignition Dwell" address="d746c">
+		<table name="Engine Speed" address="d7418"/>
+		<table name="Battery Volts" address="d7458"/>
+	</table>
+
+	<table name="Requested Torque Limit A (Per Gear/Engine Speed)" address="dd518">
+		<table name="Engine Speed" address="dd4f8" elements="2"/>
+		<table name="Gear" address="dd500"/>
+	</table>
+
+	<table name="Requested Torque Limit B (Per Gear/Engine Speed)" address="dd550">
+		<table name="Engine Speed" address="dd530" elements="2"/>
+		<table name="Gear" address="dd538"/>
+	</table>
+
+	<table name="Fuel Pump Duty" address="4a498">
+	</table>
 
 </rom>
