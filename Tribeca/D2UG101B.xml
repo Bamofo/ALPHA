@@ -390,6 +390,11 @@
 		<table name="Engine Speed" address="ce550"/>
 	</table>
 
+	<table name="Exhaust Cam Retard Angle A (AVCS)" address="ce3e4">
+		<table name="Engine Load" address="ce380"/>
+		<table name="Engine Speed" address="ce3b8" elements="11"/>
+	</table>
+
 	<table name="Requested Torque A (Accelerator Pedal)" address="dd2b0">
 		<table name="Accelerator Pedal Angle" address="dd21c" elements="17"/>
 		<table name="Engine Speed" address="dd260" elements="20"/>

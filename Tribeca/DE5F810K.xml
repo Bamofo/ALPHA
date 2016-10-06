@@ -1022,4 +1022,9 @@
 	<table name="Fuel Pump Duty" address="4a498">
 	</table>
 
+	<table name="EGR Valve A" address="cf814">
+		<table name="X" address="cf784"/>
+		<table name="Y" address="cf7c0" elements="21"/>
+	</table>
+
 </rom>
