@@ -477,16 +477,11 @@
 		<table name="Engine Speed" address="d301c" elements="16"/>
 	</table>
 
-	<table name="Exhaust Cam Retard Angle A (AVCS)" scaling="Advance(degrees)7">
-		<table name="Engine Load" elements="15"/>
-		<table name="Engine Speed" elements="16"/>
+	<table name="Exhaust Cam Retard Angle A (AVCS)" address="d3e40" scaling="Advance(degrees)3">
+		<table name="Engine Load" address="d3dc4" elements="15"/>
+		<table name="Engine Speed" address="d3e00" elements="16"/>
 	</table>
-
-	<table name="Exhaust Cam Retard Angle B (AVCS)" scaling="Advance(degrees)7">
-		<table name="Engine Load" elements="15"/>
-		<table name="Engine Speed" elements="16"/>
-	</table>
-
+	
 	<table name="Requested Torque A (Accelerator Pedal)" address="dddac">
 		<table name="Accelerator Pedal Angle" address="ddd0c" elements="20"/>
 		<table name="Engine Speed" address="ddd5c" elements="20"/>
@@ -884,6 +879,16 @@
 	<table name="Front AF Sensor Smoothing Table">
 		<table name="Smoothed MAF" elements="6"/>
 		<table name="Engine Load" elements="6"/>
+	</table>
+
+	<table name="EGR Valve A" address="cac9c" scaling="Advance(degrees)7">
+		<table name="X" address="cac20" scaling="EngineLoad(g/rev)1"/>
+		<table name="Y" address="cac5c" elements="16" scaling="EngineSpeed(RPM)1"/>
+	</table>
+
+	<table name="EGR Valve B" address="caef8">
+		<table name="X" address="cae7c"/>
+		<table name="Y" address="caeb8"/>
 	</table>
 
 </rom>

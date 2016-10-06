@@ -51,9 +51,9 @@
 		<table name="Engine Speed" address="d301c" elements="16"/>
 	</table>
 
-	<table name="Exhaust Cam Retard Angle Cruise (AVCS)" address="d3e40" scaling="Advance(degrees)3">
-		<table name="Engine Load" address="d3dc4" elements="15"/>
-		<table name="Engine Speed" address="d3e00" elements="16"/>
+	<table name="Exhaust Cam Retard Angle Cruise (AVCS)" scaling="Advance(degrees)3">
+		<table name="Engine Load" elements="15"/>
+		<table name="Engine Speed" elements="16"/>
 	</table>
 
 	<table name="Radiator Fan Modes A (ECT)" address="d1534">
