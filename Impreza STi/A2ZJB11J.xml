@@ -17,101 +17,6 @@
 
 	<include>32BITBASE</include>
 
-	<table name="Low Pulse Width Fuel Injector Compensation" address="c6450">
-		<table name="Injector Pulse Width" address="c6430"/>
-	</table>
-
-	<table name="Low pulse width fuel injector compensation maximum RPM" address="c5fc8">
-	</table>
-
-	<table name="Low pulse width fuel injector compensation maximum IPW" address="c5fcc">
-	</table>
-
-	<table name="Ignition Dwell" address="cc560">
-		<table name="Engine Speed" address="cc50c"/>
-		<table name="Battery Volts" address="cc54c"/>
-	</table>
-
-	<table name="Fuel Pump Duty" address="3402c">
-	</table>
-
-	<table name="Fuel Pump Duty High Injector Duty Cycle" address="c9c4c">
-		<table name="Battery Voltage" address="c9c3c"/>
-		<table name="Manifold Relative Pressure" address="c9c44"/>
-	</table>
-
-	<table name="Fuel Pump Duty Medium Injector Duty Cycle" address="c9c64">
-		<table name="Battery Voltage" address="c9c54"/>
-		<table name="Manifold Relative Pressure" address="c9c5c"/>
-	</table>
-
-	<table name="A/F #1 Learning Max Threshold" address="c5e04"/>
-
-	<table name="A/F #1 Learning Min Threshold" address="c5df4"/>
-
-	<table name="AF 3 Correction Limits" address="27f2c">
-	</table>
-
-	<table name="Tau Input A Falling Load Activation A" address="c6746">
-		<table name="Coolant Temperature" address="c60f4"/>
-	</table>
-
-	<table name="Tau Input B Activation (Engine Load)" address="c6828">
-		<table name="Engine Load" address="c67fc"/>
-	</table>
-
-	<table name="Tau Input A Rising Load Activation" address="c7db8">
-		<table name="Coolant Temperature" address="c60f4"/>
-		<table name="Engine Load" address="c7dac"/>
-	</table>
-
-	<table name="Front AF Sensor Smoothing Table" address="cc620">
-		<table name="Smoothed MAF" address="cc600"/>
-		<table name="Engine Load" address="cc610"/>
-	</table>
-
-	<table name="Overrun Fueling RPM Resume Threshold" address="c6c68">
-		<table name="Coolant Temperature" address="c60f4"/>
-	</table>
-
-	<table name="Overrun Enrich RPM Delta Activation" address="c5fe4">
-	</table>
-
-	<table name="Overrun initial injector enrichment (pulsewidth)" address="c5fe8">
-	</table>
-
-	<table name="Overrun Fueling Cut Counter RPM Threshold" address="c6014">
-	</table>
-
-	<table name="Idle Speed Stability A" address="cb684">
-		<table name="Idle Speed Error" address="cb62c" elements="17"/>
-		<table name="Engine Speed Delta" address="cb670" elements="5"/>
-	</table>
-
-	<table name="Hotstart Enrichment Decay Delay" address="c5b0a"/>
-
-	<table name="Hotstart Enrichment Decay Step" address="c5ef8"/>
-
-	<table name="Initial Hotstart Enrichment (High)" address="c5ef0"/>
-
-	<table name="Hotstart High Enrichment Activation Threshold (Coolant Temperature)" address="c5ee0"/>
-
-	<table name="Hotstart High Enrichment Activation Threshold (Intake Air Temperature)" address="c5ee8"/>
-
-	<table name="Initial Hotstart Enrichment (Low)" address="c5ef4"/>
-
-	<table name="Hotstart Low Enrichment Activation Threshold (Coolant Temperature)" address="c5ee4"/>
-
-	<table name="Hotstart Low Enrichment Activation Threshold (Minimum Intake Air Temperature)" address="c5eec"/>
-
-	<table name="Maximum Non-Idle Hotstart Enrichment (Post Delay)" address="c5efc"/>
-
-	<table name="Hotstart Maximum Non-Idle Enrichment Delay" address="c5b0e"/>
-
-	<table name="Hotstart Minimum Enrichment Limit Runtime" address="c5b0c"/>
-
-	<table name="Hotstart Minimum Enrichment (During Delay and Runtime)" address="c5f00"/>
-
 	<table name="Target Boost (KCA Additive Low)" address="c1088">
 		<table name="Throttle Plate Opening Angle" address="c1038"/>
 		<table name="Engine Speed" address="c1058"/>
@@ -967,5 +872,107 @@
 	<table name="(P2229) BARO. PRESSURE CIRCUIT HIGH INPUT" address="6aac9"/>
 
 	<table name="MAF Adder (CPC Multiplier)" address="c1bd0" level="2"/>
+
+	<table name="AF 3 Correction Adder (Increase)" address="c5e3c"/>
+
+	<table name="AF 3 Correction Adder (Decrease)" address="c5e38"/>
+
+	<table name="Low Pulse Width Fuel Injector Compensation" address="c6450">
+		<table name="Injector Pulse Width" address="c6430"/>
+	</table>
+
+	<table name="Low pulse width fuel injector compensation maximum RPM" address="c5fc8">
+	</table>
+
+	<table name="Low pulse width fuel injector compensation maximum IPW" address="c5fcc">
+	</table>
+
+	<table name="Ignition Dwell" address="cc560">
+		<table name="Engine Speed" address="cc50c"/>
+		<table name="Battery Volts" address="cc54c"/>
+	</table>
+
+	<table name="Fuel Pump Duty" address="3402c">
+	</table>
+
+	<table name="Fuel Pump Duty High Injector Duty Cycle" address="c9c4c">
+		<table name="Battery Voltage" address="c9c3c"/>
+		<table name="Manifold Relative Pressure" address="c9c44"/>
+	</table>
+
+	<table name="Fuel Pump Duty Medium Injector Duty Cycle" address="c9c64">
+		<table name="Battery Voltage" address="c9c54"/>
+		<table name="Manifold Relative Pressure" address="c9c5c"/>
+	</table>
+
+	<table name="A/F #1 Learning Max Threshold" address="c5e04"/>
+
+	<table name="A/F #1 Learning Min Threshold" address="c5df4"/>
+
+	<table name="AF 3 CL Target Compensation Limits" address="2a3e8">
+	</table>
+
+	<table name="AF 3 Correction Limits" address="27f2c">
+	</table>
+
+	<table name="Tau Input A Falling Load Activation A" address="c6746">
+		<table name="Coolant Temperature" address="c60f4"/>
+	</table>
+
+	<table name="Tau Input B Activation (Engine Load)" address="c6828">
+		<table name="Engine Load" address="c67fc"/>
+	</table>
+
+	<table name="Tau Input A Rising Load Activation" address="c7db8">
+		<table name="Coolant Temperature" address="c60f4"/>
+		<table name="Engine Load" address="c7dac"/>
+	</table>
+
+	<table name="Front AF Sensor Smoothing Table" address="cc620">
+		<table name="Smoothed MAF" address="cc600"/>
+		<table name="Engine Load" address="cc610"/>
+	</table>
+
+	<table name="Overrun Fueling RPM Resume Threshold" address="c6c68">
+		<table name="Coolant Temperature" address="c60f4"/>
+	</table>
+
+	<table name="Overrun Enrich RPM Delta Activation" address="c5fe4">
+	</table>
+
+	<table name="Overrun initial injector enrichment (pulsewidth)" address="c5fe8">
+	</table>
+
+	<table name="Overrun Fueling Cut Counter RPM Threshold" address="c6014">
+	</table>
+
+	<table name="Idle Speed Stability A" address="cb684">
+		<table name="Idle Speed Error" address="cb62c" elements="17"/>
+		<table name="Engine Speed Delta" address="cb670" elements="5"/>
+	</table>
+
+	<table name="Hotstart Enrichment Decay Delay" address="c5b0a"/>
+
+	<table name="Hotstart Enrichment Decay Step" address="c5ef8"/>
+
+	<table name="Initial Hotstart Enrichment (High)" address="c5ef0"/>
+
+	<table name="Hotstart High Enrichment Activation Threshold (Coolant Temperature)" address="c5ee0"/>
+
+	<table name="Hotstart High Enrichment Activation Threshold (Intake Air Temperature)" address="c5ee8"/>
+
+	<table name="Initial Hotstart Enrichment (Low)" address="c5ef4"/>
+
+	<table name="Hotstart Low Enrichment Activation Threshold (Coolant Temperature)" address="c5ee4"/>
+
+	<table name="Hotstart Low Enrichment Activation Threshold (Minimum Intake Air Temperature)" address="c5eec"/>
+
+	<table name="Maximum Non-Idle Hotstart Enrichment (Post Delay)" address="c5efc"/>
+
+	<table name="Hotstart Maximum Non-Idle Enrichment Delay" address="c5b0e"/>
+
+	<table name="Hotstart Minimum Enrichment (During Delay and Runtime)" address="c5f00"/>
+
+	<table name="Hotstart Minimum Enrichment Limit Runtime" address="c5b0c"/>
 
 </rom>

@@ -871,12 +871,22 @@
 
 	<table name="(P2229) BARO. PRESSURE CIRCUIT HIGH INPUT" address="6bcad"/>
 
+	<table name="AF 3 Correction Adder (Increase)" address="c5e28"/>
+
+	<table name="AF 3 Correction Adder (Decrease)" address="c5e24"/>
+
 	<table name="Ignition Dwell" address="cc664">
 		<table name="Engine Speed" address="cc610"/>
 		<table name="Battery Volts" address="cc650"/>
 	</table>
 
 	<table name="Fuel Pump Duty" address="34d98">
+	</table>
+
+	<table name="AF 3 CL Target Compensation Limits" address="2b154">
+	</table>
+
+	<table name="AF 3 Correction Limits" address="28c98">
 	</table>
 
 	<table name="Tau Input A Falling Load Activation" address="c66f2">

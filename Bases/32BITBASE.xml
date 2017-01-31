@@ -8795,4 +8795,8 @@
 		<table name="Y" type="Y Axis" elements="16" scaling="EngineSpeed(RPM)1"/>
 	</table>
 
+	<table name="TGV - Tribeca - Requested Torque - Open Above" category="Intake" type="2D" level="1" scaling="RequestedTorque(rawecuvalue)">
+		<table name="Engine Speed" type="Y Axis" elements="14" scaling="EngineSpeed(RPM)"/>
+	</table>
+
 </rom>

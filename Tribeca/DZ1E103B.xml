@@ -71,6 +71,10 @@
 	<table name="Radiator Fan Modes (Veh. Speed)" address="d1578">
 	</table>
 
+	<table name="TGV Switching Requested_Torque (High / Open Above) I" address="c3f8c">
+		<table name="Engine Speed" address="c3f54" elements="14"/>
+	</table>
+
 	<table name="Target Throttle Angle Idle Airflow Target Base Minimum" address="d02a0">
 		<table name="Engine Speed" address="d021c"/>
 		<table name="Requested Torque" address="d025c" elements="17"/>
@@ -79,6 +83,10 @@
 	<table name="Ignition Dwell" address="d13b8">
 		<table name="Engine Speed" address="d1368" elements="15"/>
 		<table name="Battery Volts" address="d13a4"/>
+	</table>
+
+	<table name="TGV - Tribeca - Requested Torque - Open Above" address="c3f8c" scaling="RequestedTorque(rawecuvalue)1">
+		<table name="Engine Speed" address="c3f54"/>
 	</table>
 
 </rom>
