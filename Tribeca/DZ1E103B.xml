@@ -90,6 +90,9 @@
 		<table name="Battery Volts" address="d13a4"/>
 	</table>
 
+	<table name="AF 3 Correction Limits" address="2fd80">
+	</table>
+
 	<table name="TGV - Tribeca - Requested Torque - Open Above" address="c3f8c" scaling="RequestedTorque(rawecuvalue)1">
 		<table name="Engine Speed" address="c3f54"/>
 	</table>
