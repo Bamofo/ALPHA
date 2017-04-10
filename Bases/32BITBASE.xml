@@ -8432,6 +8432,12 @@
 		<table name="Gear" type="Y Axis" elements="6" scaling="Gear"/>
 	</table>
 
+	<table name="Requested Torque Limit C (Engine Load/Engine Speed)" category="ALPHA Per Gear Requested Torque" type="3D" level="4" scaling="RequestedTorque(rawecuvalue)">
+		<description>This table determines the Max requested torque based on calculated Gear and engine speed.</description>
+		<table name="Engine Speed" type="X Axis" elements="6" scaling="EngineLoad(g/rev)1"/>
+		<table name="Engine Load" type="Y Axis" elements="9" scaling="EngineSpeed(RPM)1"/>
+	</table>
+
 	<table name="Requested Torque Limit (IAM)" category="Drive-by-Wire Throttle (DBW)" type="3D" level="4" scaling="RequestedTorque(rawecuvalue)">
 		<description>This table determines the Max requested torque based on IAM.</description>
 		<table name="IAM" type="X Axis" elements="2" scaling="IgnitionAdvanceMultiplier(IAM)"/>

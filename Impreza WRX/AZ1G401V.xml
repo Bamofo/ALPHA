@@ -1042,4 +1042,24 @@
 	<table name="Fuel Pump Duty" address="45328">
 	</table>
 
+	<table name="AF 3 CL Target Compensation Limits" address="2f210">
+	</table>
+
+	<table name="AF 3 Correction Limits" address="30da4">
+	</table>
+
+	<table name="Hotstart Enrichment Decay Delay" address="c8780"/>
+
+	<table name="Hotstart Enrichment Decay Step" address="c8d4c"/>
+
+	<table name="Hotstart High Enrichment Activation Threshold (Coolant Temperature)" address="c8d30"/>
+
+	<table name="Hotstart High Enrichment Activation Threshold (Intake Air Temperature)" address="c8d34"/>
+
+	<table name="Hotstart Low Enrichment Activation Threshold (Coolant Temperature)" address="c8d38"/>
+
+	<table name="Hotstart Low Enrichment Activation Threshold (Minimum Intake Air Temperature)" address="c8d3c"/>
+
+	<table name="Hotstart Minimum Enrichment Limit Runtime" address="c8782"/>
+
 </rom>

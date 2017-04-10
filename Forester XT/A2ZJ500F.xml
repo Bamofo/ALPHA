@@ -868,12 +868,21 @@
 
 	<table name="(P2093) OCV SOLENOID A2 CIRCUIT SHORT" address="3d712"/>
 
+	<table name="Calculated Engine Torque A">
+		<table name="Engine Load" elements="12"/>
+	</table>
+
 	<table name="AF 3 Correction Adder (Increase)" address="53210"/>
 
 	<table name="AF 3 Correction Adder (Decrease)" address="5320c"/>
 
 	<table name="AF 3 Correction Adder (Increase) B" address="53d9c">
 		<table address="53d78"/>
+	</table>
+
+	<table name="Ignition Dwell" address="587ec">
+		<table name="Engine Speed" address="58798"/>
+		<table name="Battery Volts" address="587d8"/>
 	</table>
 
 	<table name="AF 3 CL Target Compensation Limits" address="1e044">
