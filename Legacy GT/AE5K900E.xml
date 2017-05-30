@@ -22,8 +22,8 @@
 	</table>
 
 	<table name="Boost Limit (Fuel Cut)_" address="d1328">
-		<table name="Atmospheric Pressure" address="d12d8"/>
-		<table name="Engine Speed" address="d12f8"/>
+		<table name="Atmospheric Pressure" address="d12d8" elements="8"/>
+		<table name="Engine Speed" address="d12f8" elements="12"/>
 	</table>
 
 	<table name="Initial Wastegate Duty_">
@@ -34,6 +34,15 @@
 	<table name="Max Wastegate Duty_">
 		<table name="Requested Torque" elements="14"/>
 		<table name="Engine Speed" elements="13"/>
+	</table>
+
+	<table name="Manifold Pressure Sensor Scaling_" address="d9454">
+	</table>
+
+	<table name="Manifold Pressure Sensor Limits (CEL)" address="d9404">
+	</table>
+
+	<table name="Manifold Pressure Sensor CEL Delays" address="d93b5">
 	</table>
 
 	<table name="Primary Open Loop Fueling" address="cf334">
@@ -49,6 +58,11 @@
 	<table name="Primary Open Loop Fueling (Failsafe)" address="cf4c8">
 		<table name="Engine Load" address="cf444" elements="17"/>
 		<table name="Engine Speed" address="cf488" elements="16"/>
+	</table>
+
+	<table name="CL Fueling Target Compensation A (Load)" address="d0668">
+		<table name="Engine Load" address="d0610"/>
+		<table name="Engine Speed" address="d0638"/>
 	</table>
 
 	<table name="CL to OL Delay_" address="cb478">
@@ -333,7 +347,7 @@
 		<table name="Coolant Temperature" address="d5698"/>
 	</table>
 
-	<table name="(P0420) CAT EFFICIENCY BELOW THRESHOLD" address="967c9"/>
+	<table name="(P0420) CAT EFFICIENCY BELOW THRESHOLD" address="967d9"/>
 
 	<table name="TGV Switching Intake Temperature Threshold (Open Below)" address="da690">
 		<table name="Intake Air Temp" address="da664"/>
