@@ -87,4 +87,8 @@
 	<table name="Low pulse width fuel injector compensation maximum IPW" address="c8740">
 	</table>
 
+	<table name="Misfire Count MAP Threshold" address="c52b8">
+		<table name="X" address="c5280"/>
+	</table>
+
 </rom>

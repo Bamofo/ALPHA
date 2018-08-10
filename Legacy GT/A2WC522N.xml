@@ -1,71 +1,76 @@
 <rom>
-  <romid>
-    <xmlid>A2WC522N</xmlid>
-    <internalidaddress>2000</internalidaddress>
-    <internalidstring>A2WC522N</internalidstring>
-    <ecuid>2F12785606</ecuid>
-    <year>05</year>
-    <market>USDM</market>
-    <make>Subaru</make>
-    <model>Legacy</model>
-    <submodel>GT</submodel>
-    <transmission>MT</transmission>
-    <memmodel>SH7058</memmodel>
-    <flashmethod>sti05</flashmethod>
-    <checksummodule>subarudbw</checksummodule>
-  </romid>
-  <include>A2WC521N</include>
+	<romid>
+		<xmlid>A2WC522N</xmlid>
+		<internalidaddress>2000</internalidaddress>
+		<internalidstring>A2WC522N</internalidstring>
+		<ecuid>2F12785606</ecuid>
+		<make>Subaru</make>
+		<market>USDM</market>
+		<model>Legacy</model>
+		<submodel>GT</submodel>
+		<transmission>MT</transmission>
+		<year>05</year>
+		<flashmethod>sti05</flashmethod>
+		<memmodel>SH7058</memmodel>
+		<checksummodule>subarudbw</checksummodule>
+	</romid>
 
-    <table name="Idle Airflow Min Target Decel Adder A" address="cb304">
-        <table name="Engine Speed" address="cb2fc" elements="2"/>
-    </table>
-    <table name="Idle Speed Stability A" address="cc334">
-        <table name="Idle Speed Error" address="cc2d4" elements="17"/>
-        <table name="Engine Speed Delta" address="cc318" elements="7"/>
-    </table>
+	<include>A2WC521N</include>
 
-    <table name="Idle Airflow Min Target Decel Adder Active Veh Speed A" address="caa34"/>
-    <table name="Idle Airflow Min Target Decel Initial Idle Min Airflow A" address="caa44"/>
+	<table name="Overrun Fueling RPM Resume Threshold" address="c81aa">
+		<table name="Coolant Temperature" address="c7470"/>
+	</table>
 
-    <table name="Idle Airflow Min Target Decel Initial Idle Activation Max Mode Counter" address="ca97e"/>
+	<table name="Overrun Enrich RPM Delta Activation" address="c7230">
+	</table>
 
-    <table name="Idle Airflow Min Target Decel Ramping Adder Decreasing" address="caa4c"/>
+	<table name="Overrun initial injector enrichment (pulsewidth)" address="c7234">
+	</table>
 
-    <table name="Idle Airflow Min Target Decel Ramping Adder Increasing" address="caa50"/>
-    <table name="Hotstart Enrichment Decay Delay" address="c6d0a"/>
+	<table name="Overrun Fueling Cut Counter RPM Threshold" address="c7260">
+	</table>
 
-    <table name="Hotstart Enrichment Decay Step" address="c7170"/>
+	<table name="Idle Airflow Min Target Decel Adder A" address="cb304">
+		<table name="Engine Speed" address="cb2fc" elements="2"/>
+	</table>
 
-    <table name="Initial Hotstart Enrichment (High)" address="c7160"/>
+	<table name="Idle Speed Stability A" address="cc334">
+		<table name="Idle Speed Error" address="cc2d4" elements="17"/>
+		<table name="Engine Speed Delta" address="cc318" elements="7"/>
+	</table>
 
-    <table name="Hotstart High Enrichment Activation Threshold (Coolant Temperature)" address="c71500"/>
+	<table name="Idle Airflow Min Target Decel Adder Active Veh Speed A" address="caa34"/>
 
-    <table name="Hotstart High Enrichment Activation Threshold (Intake Air Temperature)" address="c7154"/>
+	<table name="Idle Airflow Min Target Decel Initial Idle Min Airflow A" address="caa44"/>
 
-    <table name="Initial Hotstart Enrichment (Low)" address="c7164"/>
+	<table name="Idle Airflow Min Target Decel Initial Idle Activation Max Mode Counter" address="ca97e"/>
 
-    <table name="Hotstart Low Enrichment Activation Threshold (Coolant Temperature)" address="c7158"/>
+	<table name="Idle Airflow Min Target Decel Ramping Adder Decreasing" address="caa4c"/>
 
-    <table name="Hotstart Low Enrichment Activation Threshold (Minimum Intake Air Temperature)" address="c715c"/>
+	<table name="Idle Airflow Min Target Decel Ramping Adder Increasing" address="caa50"/>
 
-    <table name="Maximum Non-Idle Hotstart Enrichment (Post Delay)" address="c716c"/>
+	<table name="Hotstart Enrichment Decay Delay" address="c6d0a"/>
 
-    <table name="Hotstart Maximum Non-Idle Enrichment Delay" address="c6d0e"/>
+	<table name="Hotstart Enrichment Decay Step" address="c7170"/>
 
-    <table name="Hotstart Minimum Enrichment (During Delay and Runtime)" address="c6d0c"/>
+	<table name="Initial Hotstart Enrichment (High)" address="c7160"/>
 
-    <table name="Hotstart Minimum Enrichment Limit Runtime" address="c7168"/>
-    
-    <table name="Overrun Fueling RPM Resume Threshold" address="c81aa">
-        <table name="Coolant Temperature" address="C7470"/>
-    </table>
+	<table name="Hotstart High Enrichment Activation Threshold (Coolant Temperature)" address="c7150"/>
 
-    <table name="Overrun Enrich RPM Delta Activation" address="c7230">
-    </table>
+	<table name="Hotstart High Enrichment Activation Threshold (Intake Air Temperature)" address="c7158"/>
 
-    <table name="Overrun initial injector enrichment (pulsewidth)" address="c7234">
-    </table>
+	<table name="Initial Hotstart Enrichment (Low)" address="c7164"/>
 
-    <table name="Overrun Fueling Cut Counter RPM Threshold" address="c7260">
-    </table>
+	<table name="Hotstart Low Enrichment Activation Threshold (Coolant Temperature)" address="c7154"/>
+
+	<table name="Hotstart Low Enrichment Activation Threshold (Minimum Intake Air Temperature)" address="c715c"/>
+
+	<table name="Maximum Non-Idle Hotstart Enrichment (Post Delay)" address="c716c"/>
+
+	<table name="Hotstart Maximum Non-Idle Enrichment Delay" address="c6d0e"/>
+
+	<table name="Hotstart Minimum Enrichment (During Delay and Runtime)" address="c7168"/>
+
+	<table name="Hotstart Minimum Enrichment Limit Runtime" address="c6d0c"/>
+
 </rom>

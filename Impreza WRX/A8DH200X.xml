@@ -1072,4 +1072,9 @@
 
 	<table name="Hotstart Minimum Enrichment Limit Runtime" address="c81e4"/>
 
+	<table name="Misfire DTC Threshold" category="Misfire" address="c57bc" type="3D" level="1" scaling="Misfire DTC">
+		<table name="Engine Load" address="c575c" type="X Axis" elements="10" scaling="EngineLoad(g/rev)1"/>
+		<table name="Engine Speed" address="c5784" type="Y Axis" elements="14" scaling="RPM"/>
+	</table>
+	
 </rom>

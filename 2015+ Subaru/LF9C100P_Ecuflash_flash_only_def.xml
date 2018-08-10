@@ -1,0 +1,17 @@
+   <rom>
+    <romid>
+      <xmlid>LF9C100P</xmlid>
+      <internalidaddress>38035</internalidaddress>
+      <internalidstring>LF9C100P</internalidstring>
+      <ecuid>B229B07007</ecuid>
+      <year>2018</year>
+      <market>USDM</market>
+      <make>Subaru</make>
+      <model>Impreza</model>
+      <submodel>WRX</submodel>
+      <transmission>MT</transmission>
+      <memmodel>SH72543R</memmodel>
+      <flashmethod>mode23</flashmethod>
+      <filesize>2048kb</filesize>
+    </romid>
+  </rom>
