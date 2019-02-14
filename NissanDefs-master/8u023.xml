@@ -1,10 +1,10 @@
 <rom base="NISSAN_01">
     <romid>
-	<xmlid>8U523</xmlid>
+	<xmlid>8U023</xmlid>
 	<hwid>3TREE21N14</hwid>
       <internalidaddress>7438</internalidaddress>
-      <internalidstring>8U523</internalidstring>
-      <ecuid>8U523</ecuid>
+      <internalidstring>8U023</internalidstring>
+      <ecuid>8U023</ecuid>
       <year>02</year>
       <market>US</market>
       <make>Nissan</make>
@@ -69,6 +69,11 @@
 <table name="Throttle Open" storageaddress="0x6828">
 	<table type="X Axis" storageaddress="0x8486" />
 	<table type="Y Axis" storageaddress="0x7672" />
+</table>
+
+<table name="Throttle Open 2" storageaddress="0x9540">
+	<table type="X Axis" storageaddress="0x9894" />
+	<table type="Y Axis" storageaddress="0x9804" />
 </table>
 
 <table name="Throttle ? A" storageaddress="0x6428">

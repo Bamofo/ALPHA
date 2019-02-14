@@ -899,4 +899,12 @@
 		<table name="Y" address="caeb8"/>
 	</table>
 
+	<table name="Tribeca - Map vs RPM - A (Shift-Effect)" address="c3f8c">
+		<table name="X" address="c3f54"/>
+	</table>
+
+	<table name="Tribeca - Map vs RPM - B (Shift-Effect)" address="c3fe0">
+		<table name="X" address="c3fa8"/>
+	</table>
+
 </rom>

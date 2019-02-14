@@ -91,4 +91,9 @@
 		<table name="X" address="c5280"/>
 	</table>
 
+	<table name="Misfire DTC Threshold" address="c5680">
+		<table name="Engine Load" address="c5620"/>
+		<table name="Engine Speed" address="c5648"/>
+	</table>
+
 </rom>

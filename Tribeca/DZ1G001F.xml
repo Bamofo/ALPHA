@@ -302,6 +302,26 @@
 		<table name="Engine Speed" address="cc9d0" elements="21"/>
 	</table>
 
+	<table name="Base Timing E" address="cc4c0">
+		<table name="Engine Load" address="cc430"/>
+		<table name="Engine Speed" address="cc46c" elements="21"/>
+	</table>
+
+	<table name="Base Timing F" address="cc68c">
+		<table name="Engine Load" address="cc5fc"/>
+		<table name="Engine Speed" address="cc638" elements="21"/>
+	</table>
+
+	<table name="Base Timing G" address="ccbf0">
+		<table name="Engine Load" address="ccb60"/>
+		<table name="Engine Speed" address="ccb9c" elements="21"/>
+	</table>
+
+	<table name="Base Timing H" address="ccdbc">
+		<table name="Engine Load" address="ccd2c"/>
+		<table name="Engine Speed" address="ccd68" elements="21"/>
+	</table>
+
 	<table name="Base Timing Idle" address="cace0">
 		<table name="Coolant Temperature" address="cacbc" elements="9"/>
 	</table>
@@ -550,6 +570,18 @@
 		<table name="Coolant Temp Sensor" address="d0388"/>
 	</table>
 
+	<table name="Radiator Fan Modes A (ECT)" address="d0e04">
+	</table>
+
+	<table name="Radiator Fan Modes B (ECT)" address="d0e14">
+	</table>
+
+	<table name="Radiator Fan Modes C (ECT)" address="d0e24">
+	</table>
+
+	<table name="Radiator Fan Modes D (ECT)" address="d0e34">
+	</table>
+
 	<table name="Idle Speed Target A" address="ceb64">
 		<table name="Coolant Temperature" address="ce5f8"/>
 	</table>
@@ -563,6 +595,30 @@
 	</table>
 
 	<table name="Idle Speed Target D" address="cec04">
+		<table name="Coolant Temperature" address="ce5f8"/>
+	</table>
+
+	<table name="Idle Speed Target E" address="ceb44">
+		<table name="Coolant Temperature" address="ce5f8"/>
+	</table>
+
+	<table name="Idle Speed Target F" address="ceb84">
+		<table name="Coolant Temperature" address="ce5f8"/>
+	</table>
+
+	<table name="Idle Speed Target G" address="cebc4">
+		<table name="Coolant Temperature" address="ce5f8"/>
+	</table>
+
+	<table name="Idle Speed Target H" address="cec44">
+		<table name="Coolant Temperature" address="ce5f8"/>
+	</table>
+
+	<table name="Idle Speed Target I" address="cec64">
+		<table name="Coolant Temperature" address="ce5f8"/>
+	</table>
+
+	<table name="Idle Speed Target J" address="cec84">
 		<table name="Coolant Temperature" address="ce5f8"/>
 	</table>
 
@@ -799,6 +855,32 @@
 	<table name="Ignition Dwell" address="d0c88">
 		<table name="Engine Speed" address="d0c38" elements="15"/>
 		<table name="Battery Volts" address="d0c74"/>
+	</table>
+
+	<table name="AF 3 Correction Limits" address="2f478">
+	</table>
+
+	<table name="EGR Valve A" address="ca15c">
+		<table name="X" address="ca0e0"/>
+		<table name="Y" address="ca11c"/>
+	</table>
+
+	<table name="EGR Valve B" address="ca3b8">
+		<table name="X" address="ca33c"/>
+		<table name="Y" address="ca378"/>
+	</table>
+
+	<table name="Tribeca - Map vs RPM - A (Shift-Effect)" address="c3cc8">
+		<table name="X" address="c3c90"/>
+	</table>
+
+	<table name="Tribeca - Map vs RPM - B (Shift-Effect)" address="c3d1c">
+		<table name="X" address="c3ce4"/>
+	</table>
+
+	<table name="Misfire DTC Threshold" address="c434c">
+		<table name="Engine Load" address="c42ec" elements="10"/>
+		<table name="Engine Speed" address="c4314" elements="14"/>
 	</table>
 
 </rom>

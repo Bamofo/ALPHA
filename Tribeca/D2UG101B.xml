@@ -385,14 +385,28 @@
 	<table name="Advance Multiplier Step Value" address="c9090">
 	</table>
 
-	<table name="Intake Cam Advance Angle (AVCS)" address="ce598">
+	<table name="Intake Cam Advance Angle (AVCS)">
+		<table name="Engine Load"/>
+		<table name="Engine Speed"/>
+	</table>
+
+	<table name="Intake Cam Advance Angle B (AVCS)">
+		<table name="Engine Speed" elements="11"/>
+	</table>
+
+	<table name="Intake Cam Advance Angle Cruise (AVCS)" address="ce3e4">
+		<table name="Engine Load" address="ce380"/>
+		<table name="Engine Speed" address="ce3b8" elements="11"/>
+	</table>
+
+	<table name="Intake Cam Advance Angle Non-Cruise (AVCS)" address="ce598">
 		<table name="Engine Load" address="ce518"/>
 		<table name="Engine Speed" address="ce550"/>
 	</table>
 
-	<table name="Exhaust Cam Retard Angle A (AVCS)" address="ce3e4">
-		<table name="Engine Load" address="ce380"/>
-		<table name="Engine Speed" address="ce3b8" elements="11"/>
+	<table name="Exhaust Cam Retard Angle A (AVCS)">
+		<table name="Engine Load"/>
+		<table name="Engine Speed" elements="11"/>
 	</table>
 
 	<table name="Requested Torque A (Accelerator Pedal)" address="dd2b0">
@@ -766,6 +780,14 @@
 	<table name="Ignition Dwell" address="cd54c">
 		<table name="Engine Speed" address="cd4fc" elements="15"/>
 		<table name="Battery Volts" address="cd538"/>
+	</table>
+
+	<table name="Tribeca - Map vs RPM - A (Shift-Effect)" address="c4554">
+		<table name="X" address="c451c"/>
+	</table>
+
+	<table name="Tribeca - Map vs RPM - B (Shift-Effect)" address="c45a8">
+		<table name="X" address="c4570"/>
 	</table>
 
 </rom>

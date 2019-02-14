@@ -487,6 +487,16 @@
 	<table name="Base Timing Idle Minimum Vehicle Speed Enable" address="d8730">
 	</table>
 
+	<table name="Knock Correction Advance Max Additive A (Knock Conditions)(IAM)" address="db6f8">
+		<table name="Engine Load" address="db664" elements="19"/>
+		<table name="Engine Speed" address="db6b0"/>
+	</table>
+
+	<table name="Knock Correction Advance Max Additive B (Knock Conditions)" address="dbcbc">
+		<table name="Engine Load" address="dbc28" elements="19"/>
+		<table name="Engine Speed" address="dbc74"/>
+	</table>
+
 	<table name="Knock Correction Advance Max Cruise" address="db8e4">
 		<table name="Engine Load" address="db850" elements="19"/>
 		<table name="Engine Speed" address="db89c"/>
@@ -1121,6 +1131,11 @@
 	<table name="AF 3 Correction Limits" address="3cbec">
 	</table>
 
+	<table name="Front AF Sensor Smoothing Table" address="e0234">
+		<table name="Smoothed MAF" address="e0214"/>
+		<table name="Engine Load" address="e0224"/>
+	</table>
+
 	<table name="Overrun Fueling RPM Resume Threshold" address="d463c">
 		<table name="Coolant Temperature" address="d1f88"/>
 	</table>
@@ -1157,5 +1172,15 @@
 	<table name="Idle Airflow Min Target Decel Ramping Adder Decreasing" address="dc6cc"/>
 
 	<table name="Idle Airflow Min Target Decel Ramping Adder Increasing" address="dc6d0"/>
+
+	<table name="Intake Cam Retard Angle Total (AVCS)" address="e23a8">
+		<table name="Engine Load" address="e2314"/>
+		<table name="Engine Speed" address="e2360"/>
+	</table>
+
+	<table name="Exhaust Cam Advance Angle Total (AVCS)" address="e3118">
+		<table name="Engine Load" address="e3084"/>
+		<table name="Engine Speed" address="e30d0"/>
+	</table>
 
 </rom>

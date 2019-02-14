@@ -1,0 +1,48 @@
+<rom>
+	<romid>
+		<xmlid>E2ZK003A</xmlid>
+		<internalidaddress>2000</internalidaddress>
+		<internalidstring>E2ZK003A</internalidstring>
+		<ecuid>2F220A4706</ecuid>
+		<make>Subaru</make>
+		<market>USDM</market>
+		<model>Legacy</model>
+		<submodel>2.5</submodel>
+		<transmission>AT</transmission>
+		<year>2005</year>
+		<flashmethod>sti05</flashmethod>
+		<memmodel>SH7058</memmodel>
+		<checksummodule>subarudbw</checksummodule>
+	</romid>
+
+	<include>E2ZK001A</include>
+
+	<table name="Knock Correction Advance Max A" address="cf6d4">
+		<table name="Engine Load" address="cf644" elements="15"/>
+		<table name="Engine Speed" address="cf680" elements="21"/>
+	</table>
+
+	<table name="Knock Correction Advance Max B" address="cf8a0">
+		<table name="Engine Load" address="cf810" elements="15"/>
+		<table name="Engine Speed" address="cf84c" elements="21"/>
+	</table>
+
+	<table name="Cam Advance Angle A Non-Turbo" address="cd518">
+		<table name="Engine Load" address="cd49c"/>
+		<table name="Engine Speed" address="cd4c4"/>
+	</table>
+
+	<table name="Cam Advance Angle B Non-Turbo" address="cd738">
+		<table name="Engine Load" address="cd6bc"/>
+		<table name="Engine Speed" address="cd6e4"/>
+	</table>
+
+	<table name="Target Throttle Angle Idle Airflow Target Base Minimum" address="d2bd8">
+		<table name="Engine Speed" address="d2b58"/>
+		<table name="Requested Torque" address="d2b98"/>
+	</table>
+
+	<table name="AF 3 Correction Limits" address="21c60">
+	</table>
+
+</rom>

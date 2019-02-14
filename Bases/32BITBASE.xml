@@ -5,6 +5,7 @@
 		<make>Subaru</make>
 	</romid>
 
+	<scaling name="Audi - Torque" units="units" toexpr="x*.001526" frexpr="x/.001526" format="%.0f" min="0" max="89" inc="1" storagetype="uint16" endian="little"/>
 	<scaling name="%" units="%" toexpr="x" frexpr="x" format="%.2f" min="0" max="105" inc="0.1" storagetype="float" endian="big"/>
 	<scaling name="%1" units="%" toexpr="x/.84" frexpr="x*.84" format="%.1f" min="0" max="107.1" inc="0.3" storagetype="float" endian="big"/>
 	<scaling name="'NoKnock'DelayPeriodforNegativeFeedbackCorrectionAdvance(counterthreshold)" units="'No Knock' Delay Period for Negative Feedback Correction Advance (counter threshold)" toexpr="x" frexpr="x" format="%.0f" min="63" max="125" inc="1" storagetype="uint16" endian="big"/>
@@ -38,6 +39,15 @@
 	<scaling name="AtmosphericPressure(psi)" units="Atmospheric Pressure (psi)" toexpr="x*.01933677" frexpr="x/.01933677" format="%.2f" min="13.38" max="13.53" inc="0.01" storagetype="float" endian="big"/>
 	<scaling name="AtmosphericPressure(psi)Multiplier" units="Atmospheric Pressure (psi) Multiplier" toexpr="x*.00078910749" frexpr="x/.00078910749" format="%.5f" min="0.05" max="0.08" inc="0.0004" storagetype="uint16" endian="big"/>
 	<scaling name="AtmosphericPressureMultiplierOffset" units="Atmospheric Pressure Multiplier Offset" toexpr="(x*.015625)-2" frexpr="(x+2)/.015625" format="%.4f" min="-0.14" max="0.25" inc="0.008" storagetype="uint8" endian="big"/>
+	<scaling name="Audi - Idle Speed" units="units" toexpr="x*10" frexpr="x/10" format="%.0f" min="0" max="2000" inc="1" storagetype="uint8" endian="big"/>
+	<scaling name="Audi - RPM-Revlimiter" units="units" toexpr="x*.25" frexpr="x*4" format="%.0f" min="0" max="10000" inc="1" storagetype="uint16" endian="little"/>
+	<scaling name="Audi - Throttle Angle" units="units" toexpr="x*.001526" frexpr="x/.001526" format="%.0f" min="0" max="100" inc="1" storagetype="uint16" endian="little"/>
+	<scaling name="Audi AFR" units="units" toexpr="x*.10" frexpr="x*10" format="%.1f" min="0" max="20" inc="0.1" storagetype="uint8" endian="big"/>
+	<scaling name="Audi AVCS Timing" units="units" toexpr="x*.007813" frexpr="x/.007813" format="%.0f" min="-40" max="40" inc="1" storagetype="int16" endian="little"/>
+	<scaling name="Audi IAT Timing" units="units" toexpr="x" frexpr="x" format="%.0f" min="-20" max="20" inc="1" storagetype="int8" endian="big"/>
+	<scaling name="Audi RPM" units="units" toexpr="x" frexpr="x" format="%.0f" min="0" max="7000" inc="1" storagetype="uint16" endian="little"/>
+	<scaling name="Audi Timing" units="units" toexpr="x" frexpr="x" format="%.0f" min="0" max="80" inc="1" storagetype="uint8" endian="big"/>
+	<scaling name="Audi throttle" units="units" toexpr="x" frexpr="x" format="%.0f" min="0" max="100" inc="1" storagetype="uint16" endian="little"/>
 	<scaling name="BaseIgnitionTiming(degreesBTDC)" units="Base Ignition Timing (degrees BTDC)" toexpr="x" frexpr="x" format="%.2f" min="12" max="17" inc="0.2" storagetype="float" endian="big"/>
 	<scaling name="BaseIgnitionTiming(degreesBTDC)1" units="Base Ignition Timing (degrees BTDC)" toexpr="(x*.3515625)-20" frexpr="(x+20)/.3515625" format="%.2f" min="-20" max="69.65" inc="0.2" storagetype="uint8" endian="big"/>
 	<scaling name="BaseIgnitionTiming(degreesBTDC)2" units="Base Ignition Timing (degrees BTDC)" toexpr="(x*.3515625)-30" frexpr="(x+30)/.3515625" format="%.2f" min="-20" max="69.65" inc="0.2" storagetype="uint8" endian="big"/>
@@ -78,6 +88,7 @@
 	<scaling name="EstimatedAir/FuelRatioPoints(Additive)1" units="Estimated Air/Fuel Ratio Points (Additive)" toexpr="(x*.000224304213)-7.35" frexpr="(x+7.35)/.000224304213" format="%.3f" min="-3" max="1" inc="0.01" storagetype="uint16" endian="big"/>
 	<scaling name="EstimatedPrimaryOpenLoopAir/FuelRatioLeanLimit" units="Estimated Primary Open Loop Air/Fuel Ratio Lean Limit" toexpr="14.7/(1+x*.00390625)" frexpr="(14.7/x-1)/.00390625" format="%.2f" min="7.47" max="14.7" inc="0.06" storagetype="uint8" endian="big"/>
 	<scaling name="Evap_Multiplier" units="Ratio" toexpr="x/100" frexpr="x*100" format="%.2f" min="0" max="1" inc="0.1" storagetype="float" endian="big"/>
+	<scaling name="Exhaust Cam Advance Angle Total" units="units" toexpr="(x*.005493164)-45" frexpr="(45+x)/.005493164" format="%.2f" min="-50" max="0" inc="1" storagetype="uint16" endian="big"/>
 	<scaling name="FFSMode" storagetype="bloblist">
 		<data name="Disabled" value="00"/>
 		<data name="Static" value="01"/>
@@ -127,6 +138,7 @@
 	<scaling name="InjectorPulseWidthCompensation" units="Injector Pulse Width Compensation" toexpr="(x*.78125)-100" frexpr="(x+100)/.78125" format="%.2f" min="-10.16" max="14.84" inc="0.01" storagetype="uint8" endian="big"/>
 	<scaling name="Injector_Flow_BRZ" units="ESTIMATED Flow Rate" toexpr="x" frexpr="x" format="%.2f" min="0" max="255" inc="0.06" storagetype="float" endian="big"/>
 	<scaling name="Intake Air Temp (TGV Switch)" units="Intake Air Temp (F)" toexpr="x*0.00390625-256" frexpr="(x+256)/0.00390625" format="%.0f" min="0" max="255" inc="1" storagetype="uint16" endian="big"/>
+	<scaling name="Intake Cam Retard Angle Total" units="units" toexpr="(x*.005493164)-45" frexpr="(45+x)/.005493164" format="%.2f" min="-50" max="0" inc="0" storagetype="uint16" endian="big"/>
 	<scaling name="Intake Duty Correction" units="Correction (Degrees)" toexpr="(x*.003051758)-100" frexpr="(x+100)/.003051758" format="%.2f" min="-100" max="0" inc="0.1" storagetype="uint16" endian="big"/>
 	<scaling name="Knock" units="units" toexpr="x" frexpr="x" format="%.2f" min="0" max="255" inc="1" storagetype="float" endian="big"/>
 	<scaling name="Knock2" units="units" toexpr="x" frexpr="x" format="%.0f" min="0" max="255" inc="1" storagetype="uint16" endian="big"/>
@@ -318,6 +330,60 @@
 			<data>Byte 4</data>
 			<data>Byte 5</data>
 		</table>
+	</table>
+
+	<table name="Base Timing Table A - VVT Off" category="Audi Timing" type="3D" level="4" scaling="Audi Timing">
+		<description>KFZW_0_A</description>
+		<table name="Engine Load" type="X Axis" elements="12" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="16" scaling="RPM"/>
+	</table>
+
+	<table name="Base Timing Table B - VVT Off" category="Audi Timing" type="3D" level="4" scaling="Audi Timing">
+		<description>KFZW_1_A</description>
+		<table name="Engine Load" type="X Axis" elements="12" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="16" scaling="RPM"/>
+	</table>
+
+	<table name="Base Timing Table C - VVT Off" category="Audi Timing" type="3D" level="4" scaling="Audi Timing">
+		<description>KFZW_2_A</description>
+		<table name="Engine Load" type="X Axis" elements="12" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="16" scaling="RPM"/>
+	</table>
+
+	<table name="Base Timing Table A - VVT On" category="Audi Timing" type="3D" level="4" scaling="Audi Timing">
+		<description>KFZW2_0_A</description>
+		<table name="Engine Load" type="X Axis" elements="12" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="16" scaling="RPM"/>
+	</table>
+
+	<table name="Base Timing Table B - VVT On" category="Audi Timing" type="3D" level="4" scaling="Audi Timing">
+		<description>KFZW2_1_A</description>
+		<table name="Engine Load" type="X Axis" elements="12" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="16" scaling="RPM"/>
+	</table>
+
+	<table name="Base Timing Table C - VVT On" category="Audi Timing" type="3D" level="4" scaling="Audi Timing">
+		<description>KFZW2_2_A</description>
+		<table name="Engine Load" type="X Axis" elements="12" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="16" scaling="RPM"/>
+	</table>
+
+	<table name="Timing Compensation (IAT) - Audi" category="Ignition Timing - Compensation" type="3D" level="2" scaling="Audi IAT Timing">
+		<description>KFZWWLNM</description>
+		<table name="Engine Load" type="X Axis" elements="12" scaling="g/rev"/>
+		<table name="Intake Temperature" type="Y Axis" elements="12" scaling="DegreesF"/>
+	</table>
+
+	<table name="Timing Compensation (ECT)" category="Ignition Timing - Compensation" type="3D" level="2" scaling="Audi Timing">
+		<description>KFZWWLRL</description>
+		<table name="Engine Load" type="X Axis" elements="6" scaling="g/rev"/>
+		<table name="Coolant Temperature" type="Y Axis" elements="12" scaling="DegreesF"/>
+	</table>
+
+	<table name="Engine Torque Limiting" category="Audi - Torque" type="3D" level="4" scaling="Audi - Torque">
+		<description>KFMIOP</description>
+		<table name="Engine Load" type="X Axis" elements="11" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="16" scaling="RPM"/>
 	</table>
 
 	<table name="Engine Load Smoothing Factor A" category="MerpMod Speed Density" type="2D" level="2" scaling="LoadFilter">
@@ -4722,6 +4788,21 @@
 		<table name="Coolant Temperature" type="Y Axis" elements="16" scaling="DegreesF"/>
 	</table>
 
+	<table name="Idle Speed Target H" category="Idle Control" type="2D" level="4" scaling="EngineSpeed(RPM)">
+		<description>Idle speed target at different coolant temperatures.</description>
+		<table name="Coolant Temperature" type="Y Axis" elements="16" scaling="DegreesF"/>
+	</table>
+
+	<table name="Idle Speed Target I" category="Idle Control" type="2D" level="4" scaling="EngineSpeed(RPM)">
+		<description>Idle speed target at different coolant temperatures.</description>
+		<table name="Coolant Temperature" type="Y Axis" elements="16" scaling="DegreesF"/>
+	</table>
+
+	<table name="Idle Speed Target J" category="Idle Control" type="2D" level="4" scaling="EngineSpeed(RPM)">
+		<description>Idle speed target at different coolant temperatures.</description>
+		<table name="Coolant Temperature" type="Y Axis" elements="16" scaling="DegreesF"/>
+	</table>
+
 	<table name="Idle Speed Target A (MT)" category="Idle Control" type="2D" level="4" scaling="EngineSpeed(RPM)">
 		<description>Idle speed target at different coolant temperatures.</description>
 		<table name="Coolant Temperature" type="Y Axis" elements="16" scaling="DegreesF"/>
@@ -8812,7 +8893,7 @@
 		<table name="Y" type="Y Axis" elements="16" scaling="EngineSpeed(RPM)1"/>
 	</table>
 
-	<table name="TGV - Tribeca - Requested Torque - Open Above" category="Intake" type="2D" level="1" scaling="RequestedTorque(rawecuvalue)">
+	<table name="TGV - Tribeca - Requested Torque - Open Above" category="Misc" type="2D" level="1" scaling="RequestedTorque(rawecuvalue)">
 		<table name="Engine Speed" type="Y Axis" elements="14" scaling="EngineSpeed(RPM)"/>
 	</table>
 
@@ -8821,6 +8902,36 @@
 	</table>
 
 	<table name="Misfire DTC Threshold" category="Misfire" type="3D" level="1" scaling="Misfire DTC">
+		<table name="Engine Load" type="X Axis" elements="10" scaling="EngineLoad(g/rev)1"/>
+		<table name="Engine Speed" type="Y Axis" elements="14" scaling="RPM"/>
+	</table>
+
+	<table name="Intake Cam Retard Angle Total (AVCS)" category="Variable Valve Timing (AVCS)" type="3D" level="2" scaling="Intake Cam Retard Angle Total">
+		<description>This map is in development.</description>
+		<table name="Engine Load" type="X Axis" elements="19" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="18" scaling="RPM"/>
+	</table>
+
+	<table name="Exhaust Cam Advance Angle Total (AVCS)" category="Variable Valve Timing (AVCS)" type="3D" level="2" scaling="Exhaust Cam Advance Angle Total">
+		<description>This map is still in development.</description>
+		<table name="Engine Load" type="X Axis" elements="19" scaling="g/rev"/>
+		<table name="Engine Speed" type="Y Axis" elements="18" scaling="RPM"/>
+	</table>
+
+	<table name="Tribeca - Map vs RPM - A (Shift-Effect)" category="Misc" type="2D" level="1" scaling="Requested Torque - TGV - Tribeca">
+		<table name="X" type="X Axis" elements="14" scaling="RPM"/>
+	</table>
+
+	<table name="Tribeca - Map vs RPM - B (Shift-Effect)" category="Misc" type="2D" level="1" scaling="Requested Torque - TGV - Tribeca">
+		<table name="X" type="X Axis" elements="14" scaling="RPM"/>
+	</table>
+
+	<table name="Misfire DTC Threshold" category="Misfire" type="3D" level="1" scaling="Misfire DTC">
+		<table name="Engine Load" type="X Axis" elements="10" scaling="EngineLoad(g/rev)1"/>
+		<table name="Engine Speed" type="Y Axis" elements="14" scaling="RPM"/>
+	</table>
+
+	<table name="Misfire DTC Threshold" category="Misc" type="3D" level="2" scaling="Misfire DTC">
 		<table name="Engine Load" type="X Axis" elements="10" scaling="EngineLoad(g/rev)1"/>
 		<table name="Engine Speed" type="Y Axis" elements="14" scaling="RPM"/>
 	</table>

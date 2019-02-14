@@ -16,6 +16,8 @@
 	</romid>
 
 	<include>32BITBASE</include>
+	<scaling name="Exhaust Cam Advance Angle Total" units="units" toexpr="(x*.005493164)-45" frexpr="(45+x)/.005493164" format="%.2f" min="-50" max="0" inc="1" storagetype="uint16" endian="big"/>
+	<scaling name="Intake Cam Retard Angle Total" units="units" toexpr="(x*.005493164)-45" frexpr="(45+x)/.005493164" format="%.2f" min="-50" max="0" inc="0" storagetype="uint16" endian="big"/>
 
 	<table name="(P000A) A CAMSHAFT POSITION SLOW RESPONSE (BANK 1)" address="ed93c"/>
 
@@ -537,14 +539,34 @@
 	<table name="Base Timing Idle Minimum Vehicle Speed Enable" address="d8730">
 	</table>
 
-	<table name="Knock Correction Advance Max Cruise" address="dba70">
+	<table name="Knock Correction Advance Max Additive A (Knock Conditions)(IAM)" address="db884">
+		<table name="Engine Load" address="db7f0" elements="19"/>
+		<table name="Engine Speed" address="db83c"/>
+	</table>
+
+	<table name="Knock Correction Advance Max Additive B (Knock Conditions)" address="dbe48">
+		<table name="Engine Load" address="dbdb4" elements="19"/>
+		<table name="Engine Speed" address="dbe00"/>
+	</table>
+
+	<table name="Knock Correction Advance Max Primary Cruise (IAM)" address="dba70">
 		<table name="Engine Load" address="db9dc" elements="19"/>
 		<table name="Engine Speed" address="dba28"/>
 	</table>
 
-	<table name="Knock Correction Advance Max Non-Cruise" address="dbc5c">
+	<table name="Knock Correction Advance Max Cruise">
+		<table name="Engine Load" elements="19"/>
+		<table name="Engine Speed"/>
+	</table>
+
+	<table name="Knock Correction Advance Max Primary Non-Cruise (IAM)" address="dbc5c">
 		<table name="Engine Load" address="dbbc8" elements="19"/>
 		<table name="Engine Speed" address="dbc14"/>
+	</table>
+
+	<table name="Knock Correction Advance Max Non-Cruise">
+		<table name="Engine Load" elements="19"/>
+		<table name="Engine Speed"/>
 	</table>
 
 	<table name="Timing Compensation A (IAT)" address="d8f48">
@@ -1207,5 +1229,15 @@
 	<table name="Idle Airflow Min Target Decel Ramping Adder Decreasing" address="dc858"/>
 
 	<table name="Idle Airflow Min Target Decel Ramping Adder Increasing" address="dc85c"/>
+
+	<table name="Intake Cam Retard Angle Total (AVCS)" address="e2534" scaling="Intake Cam Retard Angle Total">
+		<table name="Engine Load" address="e24a0"/>
+		<table name="Engine Speed" address="e24ec"/>
+	</table>
+
+	<table name="Exhaust Cam Advance Angle Total (AVCS)" address="e32a4" scaling="Exhaust Cam Advance Angle Total">
+		<table name="Engine Load" address="e3210"/>
+		<table name="Engine Speed" address="e325c"/>
+	</table>
 
 </rom>
